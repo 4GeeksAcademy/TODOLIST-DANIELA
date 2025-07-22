@@ -1,11 +1,69 @@
-/* 
+body {
+  background-color: white;
+  font-family: sans-serif;
+  padding: 20px;
+  color: #d63384;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.contenedor-tareas {
+  border: 2px solid #ff69b4;
+  max-width: 400px;
+  margin: 40px auto;
+}
 
-*/
+.titulo-principal {
+  text-align: center;
+  font-size: 24px;
+  color: #ff69b4; 
+  margin-bottom: 20px;
+}
+
+.entrada-tarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ff69b4; 
+  color: #d63384; 
+  margin-bottom: 16px;
+  background-color: white;
+}
+
+.entrada-tarea::placeholder {
+  color: #ff69b4;
+}
+
+.mensaje-sin-tareas {
+  text-align: center;
+  font-size: 14px;
+  color: #d63384; /* rosado */
+  margin-top: 10px;
+}
+
+.lista-tareas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-tarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ff69b4; 
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.boton-eliminar {
+  background: none;
+  border: 1px solid #ff69b4;
+  color: #ff69b4;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.texto-tarea {
+  color: #d63384; 
+  font-size: 16px;
+}
